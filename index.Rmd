@@ -1,0 +1,22 @@
+---
+title: "Introduction"
+---
+
+
+**Project:**
+
+How to make nights in the City of Philadelphia safer? Evidence from a data analysis of fatal shooting incidents in the City of Philadelphia
+
+**Project Description:** 
+
+Wandering on the streets after a night out with friends, residents living in the City of Philadelphia face a particular risk that those living in other places would not necessarily experience - the risk of gun shooting. Taking a close look at the publicly available datasets on shooting victims provided by the Philadelphia Police Department, I would like to explore potential patterns associated with gun shooting incidents in Philly from 2015 until March 2018, so that more specific future interventions that target at lowering gun shooting risks in the city can be proposed. This dataset includes approximately 4,000 entries of information about criminal shooting victims and officer involved shootings from 1/1/2015 through March 2018.
+
+**Research Question:**
+
+Is the fatality of a shooting incident associated with the victim's gender or sex?  
+
+**Name:**
+
+Bingyan Cao
+
+

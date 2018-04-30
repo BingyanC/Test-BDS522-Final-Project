@@ -1,0 +1,57 @@
+---
+title: "Data Analyses"
+---
+
+
+
+#### Research Question: 
+#### Is the fatality of a shooting incident associated with the victim's sex or race?
+
+**1. Association between fatality and sex**
+
+Method: Simple Logistic Regression
+
+Hypotheses:
+
+H<sub>0</sub>: There is no relationship between the independent variable (sex) and the response variable (fatality).
+
+H<sub>a</sub>: There is a relationship between the independent variable (sex) and the response variable (fatality).
+
+```{r}
+
+summary(glm(data$fatal ~ data$sex, data = data, family = binomial))
+```
+
+**Interpretation:**
+
+Since the p-value is less than 0.05, we can conclude that there is a significant relationship between the victim's sex and fatality of the shooting incident.
+
+Compared to a female, the victim being a male increases the log odds of fatality by a factor of 0.3574 (or, would increase the odds of fatality by a factor of _e_<sup>0.3574</sup>=1.4296).
+
+
+
+**2. Association between fatality and race**
+
+Method: Simple Logistic Regression
+
+Hypotheses:
+
+H<sub>0</sub>: There is no relationship between the independent variable (race) and the response variable (fatality).
+
+H<sub>a</sub>: There is a relationship between the independent variable (race) and the response variable (fatality).
+
+```{r}
+
+summary(glm(data$fatal ~ data$race, data = data, family = binomial))
+
+```
+
+
+**Interpretation:**
+
+Since the p-values are greater than 0.05, we can conclude that there is no significant relationship between the victim's race and fatality of the shooting incident.
+
+
+
+I will discuss the results and conclusions in the next page.
+

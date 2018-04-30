@@ -1,0 +1,30 @@
+---
+title: "Results & Conclusions"
+---
+
+
+
+**Results**
+
+Based on the analyses in the previous pages, we can conclude that, while there is a significant relationship between the victim's sex and fatality, there is no significant relationship between the victim's race and fatality of the shooting incident.
+
+Compared a female, the victim being a male increases the log odds of fatality by a factor of 0.3574 (or, would increase the odds of fatality by a factor of _e_<sup>0.3574</sup>=1.4296).
+
+Since no other data of the offenders' information is available from the dataset, I cannot speculate the explanations of these results in detail.
+
+However, a potential explanation is that, it is likely that the offenders would perceive males as more offensive, thus taking more aggressive actions than facing females.
+
+**Potential Confounders**
+
+Other potential confounders include: 
+
+**1. Sex of the offenders:** It is likely that sex of the offenders could influence the results.
+
+**2. Gang or organizational criminal activities:** It is also likely that more males would be involved with gang or organizational criminal activities than females, thus resulting in higher fatality in males in general.
+
+**Implications:**
+
+These results can provide risk managment insights for policymakers in the City of Philadelphia.
+
+When it comes to polic patrol guidelines, police and residents might want to be extra cautious when the potential victims are male because they might have higher odds of being associated with a fatal incident.
+

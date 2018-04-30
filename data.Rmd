@@ -1,0 +1,105 @@
+---
+title: "Data"
+---
+
+
+
+**Description of data**
+
+The data file is accessed from https://www.opendataphilly.org/dataset/shooting-victims
+
+
+It records shooting incidents in Philadelphia from 2015 until March 2018 (when I downloaded the file).
+
+My initial data cleaning process includes:
+
+1. Deleted the file column that records the file numbers that are irrelevant for the analyses
+
+2. Removed data entries with N/A values
+
+3. Reconciled "sex" and "race" columns, so that one level is only represented by one value (e.g. "male"" is only represented by "M", not "m"; "Black" is only represented by "B", not "b", etc.)
+
+**1. Overall Description**
+```{r}
+data = read.csv("shooting_data.csv")
+
+# Number of data entries
+nrow(data)
+
+# Column names
+colnames(data)
+
+```
+
+**2. Sex**
+
+First, take a look at the "sex" data
+
+```{r}
+# Data type
+class(data$sex)
+
+# "Sex"is a categorical data
+
+# What are the values?
+levels(data$sex)
+
+# Make a table with counts
+table(data$sex)
+
+# Draw a plot
+plot(data$sex, main = "Gender")
+
+```
+
+**3. Race**
+
+Next, take a look at the "race" data
+
+```{r}
+# Data type
+class(data$race)
+
+# "Race" is also a categorical data
+
+# What are the values?
+levels(data$race)
+
+# Make a table with counts
+table(data$race)
+
+# Draw a plot
+plot(data$race, main = "Race")
+
+```
+
+**4. Fatality**
+
+The column "fatal" records the number of fatalities in each of the shooting incident.
+
+```{r}
+# Data type
+class(data$fatal)
+
+# Since it is an interger data, use a table to show values 
+table(data$fatal)
+```
+
+The values are either "0" or "1", which means that when fatal shooting incidents happened, the number of fatalies was always 1 (fortunately). 
+
+Therefore, we can treat it as a categorical variable, with "1" denoting a certain shooting incident involves fatality and "0" denoting the opposite.
+
+```{r}
+# Treat "fatal" as categorical variable
+data$fatal = as.factor(data$fatal)
+levels(data$fatal)
+
+# Draw a plot
+plot(data$fatal, main = "Fatality")
+
+```
+
+
+
+After taking a close look at these key variables, I will use the next page to show my data analyses for the research questions.
+
